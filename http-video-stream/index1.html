@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body{
+        text-align: center;
+    }
+        .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+a{
+    text-decoration: none;
+}@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+body {
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+/* @keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+} */
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+/* @keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+} */
+
+
+
+    </style>
+</head>
+<body><div class="sign">
+    <span class="fast-flicker">fu</span>ture poin<span class="flicker">t</span>..
+  </div>
+    <a href="vi">  <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Click Here to play</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td>Dom</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+            <tr class="active-row">
+                <td>Melissa</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+            <tr>
+                <td>Dom</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+            <tr class="active-row">
+                <td>Melissa</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+            <tr>
+                <td>Dom</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+            <tr class="active-row">
+                <td>Melissa</td>
+                <td>16:44min</td>
+                <td>1-8-2019</td>
+            </tr>
+       
+            <!-- and so on... -->
+        </tbody>
+    </table> </a>
+</body>
+</html>
